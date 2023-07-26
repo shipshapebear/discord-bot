@@ -50,8 +50,8 @@ const rest = new REST().setToken(process.env.ACCESS_TOKEN);
         body: commands,
       }
     );
+      console.log(data)
 
-    console.log(data);
   } catch (error) {
     // And of course, make sure you catch and log any errors!
     console.error(error);
